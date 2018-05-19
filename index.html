@@ -13,57 +13,36 @@
 <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   
-  
-  
-  
-  
 </head>
 
 <body>
   <div class="container">
    	 <div class="row">
-	 <img src="ufo.jpg" alt="" class="img-responsive">
+	 <img src="UFO_BANNER.jpg" alt="" class="img-responsive" width="100%">
 
 	 </div>
 	 <br>
     <div class="row">
 	<div class="col-lg-2">
-				<p>
-				<label for="DLState">State: </label>
-				<select id="DLState"></select>
-			  </p>
-                
-                <p>
-                    <label for="search">Date:</label>
-                    <input type="text" id="txt_date">
-                </p>
-                <p>
-                    <label for="search">Duration:</label>
-                    <input type="text" id="txt_duration">
-                </p>
-                <p>
-                    <label for="search">Shape:</label>
-                    <input type="text" id="txt_shape">
-                </p>
-                <p>
-                    <label for="search">City:</label>
-                    <input type="text" id="txt_city">
-                </p>
-                <p>
-                    <label for="search">State:</label>
-                    <input type="text" id="txt_state">
-                </p>
-                <p>
-                    <label for="search">Country:</label>
-                    <input type="text" id="txt_country">
-                </p>
-                <p>
-                    <button type="button" class="btn-default" id="btn_filter">Apply Filter</button>
-                </p>
+		<div class="form-group">
+        <select id="comboSelection" class="myselect">
+            <option id="all" value="all">All</option>
+            <option id="datetime" value="datetime">Datetime</option>
+            <option id="datetime" value="city">City</option>
+            <option id="state" value="state">State</option>
+            <option id="country" value="country">Country</option>
+            <option id="shape" value="shape">Shape</option>
+        </select>
+		<br></br>
+		<p><b>Search by: </b></p>
+        <input type="text" class="form-control" id="searchby">
+		<br>
+        <a id="show" class="btn btn-default">Show UFO's!</a>
+        </div>
 
 
-            </div>
-      <div class="col-lg-10">
+    </div>
+    <div class="col-lg-10">
 	  
 	<div class="table-responsive">
 		<table id="myTable" class="display table" width="100%" >

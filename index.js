@@ -10,6 +10,10 @@ $(document).ready(function(){
   $('#myTable').dataTable();
 });
 
+window.onload = function() {
+  document.getElementById("siteLoader").style.display = "none";
+  document.getElementById("container").style.display = "block";
+}
 
 // Set filteredAddresses to addressData initially
 var filteredData = dataSet;
